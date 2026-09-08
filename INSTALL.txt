@@ -19,10 +19,13 @@ python -m ipykernel install --user --name molsim_autum --display-name "Python (m
 
 6. Verify
 python -c "
- import openmm, openmmforcefields, rdkit, py3Dmol, numpy, matplotlib
- import os
- gaff_path = os.path.join(os.path.dirname(openmmforcefields.__file__), 'ffxml', 'amber', 'gaff', 'ffxml', 'gaff-2.11.xml')
- print('OpenMM:', openmm.version.version)
- print('GAFF xml found:', os.path.exists(gaff_path))
- print('Platforms:', [openmm.Platform.getPlatform(i).getName() for i in range(openmm.Platform.getNumPlatforms())])
+import openmm, openmmforcefields, rdkit, py3Dmol, numpy, matplotlib
+import os
+gaff_path = os.path.join(os.path.dirname(openmmforcefields.__file__), 'ffxml', 'amber', 'gaff', 'ffxml', 'gaff-2.11.xml')
+print('OpenMM:', openmm.version.version)
+print('GAFF xml found:', os.path.exists(gaff_path))
+print('Platforms:', [openmm.Platform.getPlatform(i).getName() for i in range(openmm.Platform.getNumPlatforms())])
 "
+
+7. Start Jupyter
+jupyter lab
