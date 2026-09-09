@@ -30,3 +30,5 @@ print('Platforms:', [openmm.Platform.getPlatform(i).getName() for i in range(ope
 
 7. Start Jupyter
 jupyter lab
+
+8. Open the notebooks in jupyter.
