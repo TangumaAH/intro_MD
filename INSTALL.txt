@@ -13,6 +13,7 @@ conda install -c conda-forge mamba -y
 mamba install -c conda-forge openmm openmmforcefields rdkit numpy matplotlib jupyterlab ipykernel -y
 
 pip install py3Dmol
+pip install ipywidgets
 
 5. Register kernel for jupyter
 python -m ipykernel install --user --name molsim_autum --display-name "Python (molsim_autum)"
