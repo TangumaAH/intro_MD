@@ -3,6 +3,9 @@ Please, follow the next steps
 0. Add module anaconda3
 module add anaconda3
 
+You'll have to close and open a new session on the linux terminal.
+Read the output and follow the instructions.
+
 1. Create a conda environment
 conda create -n molsim_autum python=3.11 -y
 
